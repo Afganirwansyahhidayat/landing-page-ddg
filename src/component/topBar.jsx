@@ -4,7 +4,7 @@ import vectorLogo from ".././assets/Vector.svg";
 
 const TopBar = () => {
     return (
-        <div className="fixed top-0 left-0 right-0 bg-gray-500 opacity-100 mt-0 p-1 flex items-center">
+        <div className="top-0 left-0 right-0 bg-gray-500 opacity-100 mt-0 p-1 flex items-center">
             {/* Top Bar */}
             {/* Ini buat logo di kiri */}
             <img className="pl-3" src={mobileLogo} alt="Icon Logo" />

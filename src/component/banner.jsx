@@ -25,8 +25,9 @@ const Banner = () => {
     };
 
     return (
-        <div className="relative h-full mx-50 mt-8 overflow-hidden">
-            <div className="relative h-56 overflow-hidden rounded-lg md:h-90">
+        <div className="relative h-full mx-50 mt-4 overflow-hidden">
+            {/* ukuran banner */}
+            <div className="relative h-56 overflow-hidden rounded-xl md:h-90"> 
                 {images.map((img, index) => (
                     <div
                         key={index}

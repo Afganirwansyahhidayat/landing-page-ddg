@@ -2,6 +2,7 @@ import React from "react";
 import TopBar from "./component/topBar";
 import Navbar from "./component/navbar";
 import Banner from "./component/banner";
+import  FlashSale from "./component/flashSale";
 import "./App.css";
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <TopBar />
       <Navbar />
       <Banner />
+      <FlashSale />
     </div>
   );
 }

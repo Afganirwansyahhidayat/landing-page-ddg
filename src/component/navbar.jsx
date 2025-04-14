@@ -21,7 +21,7 @@ const NavbarCategory = () => {
 
 const Navbar = () => {
     return (
-        <div className="mt-10">
+        <div >
             <div className="flex justify-around items-center bg-white p-5">
                 {/* Navbar */}
                 <div className="flex ml-9 mt-3 w-full items-center gap-13">
