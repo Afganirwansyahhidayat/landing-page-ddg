@@ -79,7 +79,7 @@ const TimeFlash = () => {
 // Produk Card
 const ProductsCard = () => {
   return (
-    <div className="max-w-280 ml-46 flex flex-row gap-4 mt-3 overflow-x-scroll    ">
+    <div className="max-w-280 ml-46 flex flex-row gap-4 mt-3 overflow-x-scroll no-scrollbar  ">
       <div className="bg-white rounded-sm shadow-md p-4 relative min-w-[250px]">
         <div className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 rounded text-sm">
           -40%
@@ -368,7 +368,7 @@ const FlashSale = () => {
         </button>
       </div>
       <div>
-        <img src={line} alt="" className="mt-4 max-w-280 ml-46 flex flex-ro" /> 
+        <img src={line} alt="" className="mt-6 max-w-280 ml-46 flex flex-ro " /> 
       </div>
     </div>
   );

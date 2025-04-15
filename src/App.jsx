@@ -3,6 +3,7 @@ import TopBar from "./component/topBar";
 import Navbar from "./component/navbar";
 import Banner from "./component/banner";
 import  FlashSale from "./component/flashSale";
+import Kategori from "./component/kategori";
 import "./App.css";
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
       <Navbar />
       <Banner />
       <FlashSale />
+      <Kategori />
     </div>
   );
 }
