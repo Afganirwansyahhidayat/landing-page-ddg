@@ -368,7 +368,7 @@ const FlashSale = () => {
         </button>
       </div>
       <div>
-        <img src={line} alt="" className="mt-6 max-w-280 ml-46 flex flex-ro " /> 
+        <img src={line} alt="" className="mt-7 max-w-280 ml-46 flex flex-ro " /> 
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import wishlistIcon from ".././assets/Wishlist.svg";
 import cartIcon from ".././assets/Keranjang.svg";
 import lineIcon from ".././assets/lineVertikal.svg";
 import lineHorizontal from "../assets/lineHorizontal.svg";
+import kosong from "../assets/kosong.svg";
 
 const NavbarCategory = () => {
     return (
@@ -21,7 +22,7 @@ const NavbarCategory = () => {
 
 const Navbar = () => {
     return (
-        <div >
+        <div>
             <div className="flex justify-around items-center bg-white p-5">
                 {/* Navbar */}
                 <div className="flex ml-9 mt-3 w-full items-center gap-13">
@@ -54,21 +55,31 @@ const Navbar = () => {
                             className="w-7 h-7 cursor-pointer transition duration-300 hover:scale-120 hover:brightness-125"
                         />
 
-                        {/* Cart */}
-                        <img
-                            src={cartIcon}
-                            alt="Cart"
-                            className="w-7 h-7 cursor-pointer transition duration-300 hover:scale-120 hover:brightness-125"
-                        />
+                        {/* Popover */}
+                        <div className="relative group pl-2">
+                            {/* Cart */}
+                            <img
+                                src={cartIcon}
+                                alt="Cart"
+                                className="w-7 h-7 cursor-pointer transition duration-300 hover:scale-120 hover:brightness-125"
+                            />
+
+                            <div className="absolute justify-center right-0 top-full mt-2 hidden group-hover:grid grid-cols-2 w-[28rem] bg-white border border-gray-200 shadow-lg rounded-lg overflow-hidden z-50">
+                                {/* Deskripsi */}
+                                {/* Gambar QR */}
+                                <div className="p-3 flex items-center flex-col">
+                                    <img
+                                        src={kosong}
+                                        alt="QR Download"
+                                        className="object-cover h-full ml-50"
+                                    />
+                                </div>
+                            </div>
+                        </div>
 
                         {/* Line  */}
-                        <img
-                            src={lineIcon}
-                            alt="Line"
-                            className="w-7 h-7"
-                        />
+                        <img src={lineIcon} alt="Line" className="w-7 h-7" />
                     </div>
-
 
                     {/* Buttons */}
                     <div className="flex items-center gap-3">
@@ -82,7 +93,6 @@ const Navbar = () => {
                             Daftar
                         </button>
                     </div>
-
                 </div>
             </div>
 
