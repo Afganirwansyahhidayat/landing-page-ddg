@@ -5,6 +5,7 @@ import Banner from "./component/banner";
 import  FlashSale from "./component/flashSale";
 import Kategori from "./component/kategori";
 import ProductKategori from "./component/productKategori";
+import KategoriSearch from "./component/kategoriSearch";
 import "./App.css";
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <FlashSale />
       <Kategori />
       <ProductKategori />
+      <KategoriSearch />
     </div>
   );
 }

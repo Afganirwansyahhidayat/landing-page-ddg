@@ -5,13 +5,13 @@ import qrCode from ".././assets/qr.png";
 
 const TopBar = () => {
     return (
-        <div className="top-0 left-0 right-0 bg-gray-500 opacity-100 mt-0 p-1 flex items-center relative z-50">
+        <div className="top-0 left-0 right-0 bg-gray-500 opacity-100 mt-0 p-1 flex items-center justify-between relative z-50">
             {/* Logo kiri */}
             <img className="pl-3" src={mobileLogo} alt="Icon Logo" />
 
             {/* Teks + Hover Pop-Up */}
             <div className="relative group pl-2">
-                <p className="font-[poppins] text-white text-sm pt-1 cursor-pointer transition duration-300 ease-in-out hover:underline hover:text-red-600">
+                <p className="font-[poppins] text-white text-sm pt-1 cursor-pointer transition duration-300 ease-in-out hover:underline hover:text-red-600 sm:text-sm">
                     Download Tokoku App
                 </p>
 
@@ -39,7 +39,7 @@ const TopBar = () => {
             </div>
 
             {/* Teks tengah */}
-            <div className="flex-grow text-center">
+            <div className="hidden sm:inline flex-grow text-center">
                 <span className="font-[poppins] text-white text-sm">
                     Dapatkan voucher diskon Rp50.000 untuk transaksi pertama!{" "}
                     <a
@@ -52,15 +52,15 @@ const TopBar = () => {
             </div>
 
             {/* Dropdown kanan */}
-            <div className="relative flex items-center font-bold">
-                <select className="bg-gray-500 border-none text-white appearance-none pr-10 pl-4 py-2 rounded w-full transition duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-gray-500">
+            <div className="relative flex items-center font-bold ml-auto">
+                <select className="bg-gray-500 border-none text-white appearance-none pr-10 pl-4 py-2 rounded w-full sm:w-auto transition duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-gray-500 text-xs sm:text-sm ">
                     <option className="font-normal">Indonesia</option>
                     <option className="font-normal">English US</option>
                 </select>
                 <img
                     src={vectorLogo}
                     alt="Vector Logo"
-                    className="absolute right-3 top-5 transform -translate-y-1/2 w-4 h-4 pointer-events-none"
+                    className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 sm:w-4 sm:h-4 pointer-events-none"
                 />
             </div>
         </div>
