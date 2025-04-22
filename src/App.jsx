@@ -6,6 +6,7 @@ import  FlashSale from "./component/flashSale";
 import Kategori from "./component/kategori";
 import ProductKategori from "./component/productKategori";
 import KategoriSearch from "./component/kategoriSearch";
+import Kolaborasi from "./component/kolaborasi";
 import "./App.css";
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
       <Kategori />
       <ProductKategori />
       <KategoriSearch />
+      <Kolaborasi />
     </div>
   );
 }

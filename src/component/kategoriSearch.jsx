@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import heart from "../assets/heart.svg";
 import eyes from "../assets/eyes.svg";
+import line from "../assets/lineHorizontal.svg";
 
 const KategoriSearch = () => {
     return (
@@ -17,7 +18,7 @@ const KategoriSearch = () => {
                     {/* Icon Heart and Eye */}
                     <div className="absolute top-2 right-2 flex flex-col items-center">
                         <div className="bg-white p-1 rounded-full border border-transparent mb-1 cursor-pointer transition-transform duration-300 hover:scale-110">
-                            <img src={heart} alt="heart icon" className="w-7 h-7"/>
+                            <img src={heart} alt="heart icon" className="w-7 h-7" />
                         </div>
                         <div className="mt-1">
                             <img src={eyes} alt="eye icon" className="w-8 h8- cursor-pointer transition-transform duration-300 hover:scale-110" />
@@ -54,6 +55,9 @@ const KategoriSearch = () => {
                         <span className="text-gray-500 ml-1">
                             (88)
                         </span>
+                        <div>
+                            <img src={line} alt="line" className="w-2 h-2 ml-1" />
+                        </div>
                     </div>
                 </div>
             ))}
