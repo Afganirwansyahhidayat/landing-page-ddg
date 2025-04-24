@@ -1,15 +1,20 @@
 import React from 'react';
 import microsoftLogo from '../assets/footer/microsft.svg';
 import googleLogo from '../assets/footer/google.svg';
-import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa";
-import { SiMicrosoft, SiGoogle } from "react-icons/si";
+import igLogo from '../assets/footer/ig.svg';
+import fbLogo from '../assets/footer/fb.svg';
+import twitterLogo from '../assets/footer/x.svg';
+import appleDownload from '../assets/footer/apple.png';
+import playstoreDownload from '../assets/footer/pyy.png';
+import bcaPay from '../assets/footer/bca.svg';
+import kurir from '../assets/footer/kurir.svg';
 
 
 const Footer = () => {
   return (
     <footer className="bg-gray-200 text-gray-800 text-sm pt-10 pb-5">
       <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-5 grid-cols-2 gap-8">
-        
+
         {/* Jelajahi Tokoku */}
         <div>
           <h3 className="font-bold mb-2">Jelajahi Tokoku</h3>
@@ -48,16 +53,16 @@ const Footer = () => {
 
         {/* Keamanan & Sosial */}
         <div>
-          <h3 className="font-bold mb-2">Keamanan & Privasi</h3>
+          <h3 className="font-bold mb-2 sm:text-lg">Keamanan & Privasi</h3>
           <div className="flex items-center space-x-4 mb-6">
-            <img src={microsoftLogo} alt="Microsoft" className="h-6" />
-            <img src={googleLogo} alt="Google" className="h-6" />
+            <img src={microsoftLogo} alt="Microsoft" className="h-6 sm:h-6 w-18" />
+            <img src={googleLogo} alt="Google" className="h-6 sm:h-6 w-16" />
           </div>
           <h3 className="font-bold mb-2">Ikuti Kami</h3>
-          <div className="flex items-center space-x-4">
-            <img src="/icons/twitter.png" alt="Twitter" className="h-5 w-5 cursor-pointer hover:opacity-70 transition" />
-            <img src="/icons/facebook.png" alt="Facebook" className="h-5 w-5 cursor-pointer hover:opacity-70 transition" />
-            <img src={FaInstagram} alt="Instagram" className="h-5 w-5 cursor-pointer hover:opacity-70 transition" />
+          <div className="flex items-center space-x-4 h:3 w:2">
+            <img src={twitterLogo} alt="Twitter" className="h-8 w-8 cursor-pointer hover:scale-110 transition" />
+            <img src={fbLogo} alt="Facebook" className="h-8 w-8 cursor-pointer hover:scale-110 transition" />
+            <img src={igLogo} alt="Instagram" className="h-8 w-8 cursor-pointer hover:scale-110 transition" />
           </div>
         </div>
 
@@ -65,23 +70,38 @@ const Footer = () => {
         <div>
           <h3 className="font-bold mb-2">Download Aplikasi</h3>
           <div className="space-y-2">
-            <img src="/buttons/appstore.png" alt="App Store" className="w-32 cursor-pointer hover:opacity-80 transition" />
-            <img src="/buttons/playstore.png" alt="Google Play" className="w-32 cursor-pointer hover:opacity-80 transition" />
+            <img src={appleDownload} alt="App Store" className="w-31 cursor-pointer hover:opacity-80 transition" />
+            <img src={playstoreDownload} alt="Google Play" className="w-34 cursor-pointer hover:opacity-80 transition" />
           </div>
         </div>
 
         {/* Pembayaran & Pengiriman */}
         <div>
           <h3 className="font-bold mb-2">Pembayaran</h3>
-          <div className="grid grid-cols-4 gap-2 mb-4">
-            {[...Array(12)].map((_, i) => (
-              <div key={i} className="bg-white h-8 rounded shadow" />
+          <div className="grid grid-cols-2 gap-3 mb-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
+            {[...Array(8)].map((_, i) => (
+              <div key={i} className="bg-white h-13 w-full rounded shadow flex items-center justify-center">
+                <img
+                  src={bcaPay}
+                  alt="BCA Pay"
+                  className="w-8 cursor-pointer hover:opacity-80 transition"
+                />
+              </div>
             ))}
           </div>
           <h3 className="font-bold mb-2">Pengiriman</h3>
-          <div className="grid grid-cols-3 gap-2">
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
             {[...Array(7)].map((_, i) => (
-              <div key={i} className="bg-white h-8 rounded shadow" />
+              <div
+                key={i}
+                className="bg-white h-14 rounded shadow flex items-center justify-center cursor-pointer hover:opacity-80 transition"
+              >
+                <img
+                  src={kurir}
+                  alt={`Kurir ${i + 1}`}
+                  className="w-8 h-auto object-contain"
+                />
+              </div>
             ))}
           </div>
         </div>
