@@ -10,11 +10,6 @@ const KategoriSearch = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-3 mb-4 ml-46 mr-49">
             {[...Array(20)].map((_, index) => (
                 <div key={index} className="bg-white rounded-sm shadow-md p-4 relative cursor-pointer transition-transform duration-300 hover:scale-105">
-                    {/* Diskon Label */}
-                    <div className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 rounded text-sm">
-                        -40%
-                    </div>
-
                     {/* Icon Heart and Eye */}
                     <div className="absolute top-2 right-2 flex flex-col items-center">
                         <div className="bg-white p-1 rounded-full border border-transparent mb-1 cursor-pointer transition-transform duration-300 hover:scale-110">

@@ -7,6 +7,7 @@ import Kategori from "./component/kategori";
 import ProductKategori from "./component/productKategori";
 import KategoriSearch from "./component/kategoriSearch";
 import Kolaborasi from "./component/kolaborasi";
+import Footer from "./component/footer";
 import "./App.css";
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
       <ProductKategori />
       <KategoriSearch />
       <Kolaborasi />
+      <Footer />
     </div>
   );
 }
